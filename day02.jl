@@ -14,6 +14,7 @@ depth = sum(x.Value[x.Direction .== "down"]) - sum(x.Value[x.Direction .== "up"]
 println("The result is: ", horizontal * depth)
 
 # Part 2
+
 h = 0
 d = 0
 a = 0
@@ -23,7 +24,7 @@ for ind in 1:(size(x)[1])
     if x[ind,1] == "forward"
         h += x[ind,2]
         d += a*x[ind,2]
-    elseif  x[ind,1] == "down"
+    elseif x[ind,1] == "down"
         a += x[ind,2]
     elseif x[ind,1] == "up"
         a -= x[ind,2]
