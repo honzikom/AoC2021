@@ -22,9 +22,12 @@ result = sum(r) * (2^12 - 1 - sum(r))
 println("Solution of part 1: ", result)
 
 # Part 2
+
 ogr = 0
 cO2sr = 0
+
 y = parse.(Int, x)
+
 for ind in 1:12
     m = modes(y[ind,:])
     if 1 in m
@@ -41,6 +44,7 @@ for ind in 1:12
 end
 
 y = parse.(Int, x)
+
 for ind in 1:12
     m = modes(y[ind,:])
     m = setdiff([0,1], m)
