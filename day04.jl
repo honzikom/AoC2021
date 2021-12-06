@@ -17,7 +17,7 @@ for ind in 1:100
     push!(bingo, M[(ind-1)*5+1 : ind*5, :])
 end
 
-# Strategy is to change drawn values to negative onesin bingos
+# Strategy is to change drawn values to negative ones
 # and than search for rows/cols that are all negative
 
 # Function to check if all values in vector all negative
